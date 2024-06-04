@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#" id="navPendingTasks">Pending Tasks</a>
+      <a href="#" id="navCompletedTasks">Completed Tasks</a>
+    </div>
+
+    <div class="container">
+      <section id="pending-tasks">
+        <h2>Pending Tasks</h2>
+        <div class="task-input-container">
+          <input type="text" id="taskNameInput" placeholder="Enter task name" required/>
+          <button id="btnAddTask">Add Task</button> 
+        <br>
+          <span id="errorMsg"></span>
+        </div>
+        <table id="pendingTasks"></table>
+      </section>
+
+      <section id="completed-tasks" class="hidden">
+        <h2 id="completedHeading"></h2>
+        <div class="complete">
+          <table id="completeTasks"><table>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
